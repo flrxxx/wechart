@@ -1,0 +1,58 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+}
+.container{
+  min-height: 100%;
+  width: 100%;
+  background-image: url("http://flrxxx.gz01.bdysite.com/tempimage/indexbg.jpg");
+  background-size: cover;
+}
+.card_img{
+  padding-top: 88rpx;
+  height: 367rpx;
+  padding-bottom: 60rpx;
+}
+.cardimg{
+  width:620rpx;
+  height: 100%;
+  margin-left:10rpx;
+}
+.titletext{
+  font-size: 50rpx;
+  color:#ceb58c;
+}
+.boldtext{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.userinfo {
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
