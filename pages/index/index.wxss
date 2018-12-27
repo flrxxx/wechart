@@ -3,56 +3,81 @@ page{
   height: 100%;
   width:100%;
   overflow: hidden;
+  overflow-y: auto;
   position: relative;
 }
 .container{
   min-height: 100%;
   width: 100%;
   background-image: url("http://flrxxx.gz01.bdysite.com/tempimage/indexbg.jpg");
-  background-size: cover;
+  background-size:100% 100%;
 }
 .card_img{
-  padding-top: 88rpx;
+  padding-top: 68rpx;
   height: 367rpx;
   padding-bottom: 60rpx;
+  padding-left: 10rpx;
 }
 .cardimg{
   width:620rpx;
+  margin:0 auto;
   height: 100%;
-  margin-left:10rpx;
+  display: block;
+  
 }
 .titletext{
   font-size: 50rpx;
   color:#ceb58c;
+  margin-bottom: 15rpx;
 }
 .boldtext{
   font-weight: bold;
+  margin-bottom:70rpx;
+}
+.texttitle{
+  text-align: center;
+  margin-bottom:50rpx;
+}
+.contenttext{
+  font-size: 24rpx;
+  color: #ceb58c;
+  line-height: 48rpx;
+}
+
+.fwxy{
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.fwxy image{
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.fwxy text{
+  font-size: 24rpx;
+   color: #ceb58c;
+   vertical-align: middle;
 }
 
 
 
-
-
-
-
-
-
-
-.userinfo {
-  
+.footbtn{
+  margin: 0 68rpx;
+  margin-bottom: 30rpx;
+}
+.footbtn button{
+  background-color: #ceb58c;
+  color: #000;
+  font-size: 32rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.footinfo{
+  text-align: center;
+  font-size: 24rpx;
+  color: #ceb58c;
+  padding-bottom:20rpx;
 }

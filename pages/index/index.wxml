@@ -3,18 +3,21 @@
   <view class='card_img'>
     <image src="{{cardimg}}" class='cardimg' ></image>
   </view>
-  <view>
+  <view class='texttitle'>
     <rich-text nodes="{{h1text}}"></rich-text>
     <rich-text nodes="{{boldtext}}"></rich-text>
+    <rich-text nodes="{{contenttext}}"></rich-text>
   </view>
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class='fwxy'>
+    <view class='roundicon'>
+      <image src="../../images/roundiconactive.png"></image>
+      <text>同意 服务协议</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='footbtn'>
+    <button>开通拼团</button>
+  </view>
+  <view class='footinfo'>
+    <text>活动时间 2019/01/01——2019/01/31</text>
   </view>
 </view>
