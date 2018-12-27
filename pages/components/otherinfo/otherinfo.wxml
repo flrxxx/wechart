@@ -1,0 +1,25 @@
+<!--pages/components/otherinfo/otherinfo.wxml-->
+<view class='card_info_4wid' wx:if='{{otherinfo[0]}}'>
+  <image class='card_info_user_img' src='{{otherinfo[0].userimg}}'></image>
+  <text class='card_info_user_name'>{{otherinfo[0].username}}</text>
+</view>
+<view class='card_info_4wid' wx:else>
+  <view class='card_info_user_empty'></view>
+  <text class='card_info_user_name'>......</text>
+</view>
+<view class='card_info_4wid' wx:if='{{otherinfo[1]}}'>
+  <image class='card_info_user_img' src='{{otherinfo[1].userimg}}'></image>
+  <text class='card_info_user_name'>{{otherinfo[1].username}}</text>
+</view>
+<view class='card_info_4wid' wx:else>
+  <view class='card_info_user_empty'></view>
+  <text class='card_info_user_name'>......</text>
+</view>
+<view class='card_info_4wid' wx:if='{{otherinfo[2]}}'>
+  <image class='card_info_user_img' src='{{otherinfo[2].userimg}}'></image>
+  <text class='card_info_user_name'>{{otherinfo[2].username}}</text>
+</view>
+<view class='card_info_4wid' wx:else>
+  <view class='card_info_user_empty'></view>
+  <text class='card_info_user_name'>......</text>
+</view>

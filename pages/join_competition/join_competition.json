@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "otherinfo": "/pages/components/otherinfo/otherinfo"
+  }
+}

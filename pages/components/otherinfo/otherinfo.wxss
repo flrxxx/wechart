@@ -1,0 +1,36 @@
+/* pages/components/otherinfo/otherinfo.wxss */
+.card_info_4wid{
+  display: block;
+  width: 33.3333%;
+  text-align: center;
+  box-sizing: border-box;
+  float:left;
+  padding: 0 18rpx;
+}
+.card_info_user_empty{
+  display: block;
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #7d7d7d;
+  margin-bottom: 16rpx;
+}
+.card_info_user_img{
+  display: block;
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 16rpx;
+}
+.card_info_user_name{
+  font-size: 22rpx;
+  color:#ceb58c;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width:100%;
+  display: block;
+  text-overflow: ellipsis;
+}

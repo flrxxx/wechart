@@ -1,0 +1,106 @@
+.card{
+  padding-top: 100rpx;
+  width: 634rpx;
+  height: 442rpx;
+  margin: 0 auto;
+  position: relative;
+}
+.card_bg{
+  position: absolute;
+  top:100rpx;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  z-index: 1;
+}
+.bannerbg{
+  width: 634rpx;
+  height: 442rpx;
+  margin-left: 5rpx;
+}
+.card_info_user_img{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-top:-64rpx;
+  margin-bottom:15rpx;
+}
+.card_info_user_name{
+  text-align: center;
+  display: block;
+  font-size:36rpx;
+  color:#ceb58c;
+  margin-bottom:30rpx;
+}
+.card_info_6wid{
+  display: block;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  float:left;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.card_info_user_joininfo{
+  text-align: center;
+  border:1px solid #ceb58c;
+  width: 442rpx;
+  margin: 0 auto;
+  height: 30rpx;
+  padding: 11rpx 0;
+  font-size: 24rpx;
+  color:#ceb58c;
+  border-radius: 26rpx;
+  margin-bottom: 30rpx;
+}
+.card_info_joinnum{
+  border-right:1px solid #ceb58c;
+}
+
+.card_info{
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  top:0;
+}
+.card_info_other{
+  width: 442rpx;
+  margin: 0 auto;
+  margin-bottom:20rpx;
+}
+.card_info_other:after{
+  clear:both;
+  display: block;
+  content:"";
+}
+.lasttime{
+  font-size: 24rpx;
+  color:#5a4e3b;
+  text-align: center;
+}
+.Advertisementtext{
+  text-align: center;
+  color: #ceb58c;
+  padding-top: 30rpx;
+  margin-bottom: 40rpx;
+}
+.Advertisementtext text{
+  display: block;
+}
+.f_text{
+  font-size: 26rpx;
+  margin-bottom:30rpx;
+}
+.b_text{
+  font-size: 54rpx;
+  font-weight: bold;
+}
+.b_text.order_text{
+  font-weight: 100;
+  margin-bottom: 30rpx;
+}
+.footinfo{
+  padding-bottom: 40rpx;
+}

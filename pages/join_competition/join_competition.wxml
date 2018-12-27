@@ -1,0 +1,39 @@
+<view class="container" >
+  <view class='card'>
+    <view class='card_info'>
+        <image class='card_info_user_img' src='{{useimg}}'></image>
+        <text class='card_info_user_name'>{{usename}}</text>
+        <view class='card_info_user_joininfo'>
+          <text class='card_info_6wid card_info_joinnum'>发起3人拼团</text>
+          <text class='card_info_6wid card_info_hasnum'>已参与{{hasnum}}人</text>
+        </view>
+        <view class='card_info_other'>
+          <otherinfo otherinfo='{{otherinfo}}'></otherinfo>
+        </view>
+        <view class='lasttime'>
+          <text>距离该团结束还有{{lasttime}}</text>
+        </view>
+    </view>
+    <view class='card_bg'>
+      <image src="{{bannerbg}}"  class='bannerbg'></image>
+    </view>
+  </view>
+  <view class='Advertisementtext'>
+    <text class='f_text'>原价365元/年 拼团价39.9元</text>
+    <text class='b_text'>开灯CRM</text>
+    <text class='b_text order_text'>客户关系管理系统</text>
+    <rich-text nodes="{{contenttext}}"></rich-text>
+  </view>
+  <view class='fwxy'>
+    <view class='roundicon'>
+      <image src="../../images/roundiconactive.png"></image>
+      <text>同意 服务协议</text>
+    </view>
+  </view>
+  <view class='footbtn'>
+    <button>参与拼团</button>
+  </view>
+  <view class='footinfo'>
+    <text>活动时间 2019/01/01——2019/01/31</text>
+  </view>
+</view>
