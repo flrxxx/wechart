@@ -1,14 +1,13 @@
 {
-  "pages":[
+  "pages": [
+    "pages/login_index/login_index",
     "pages/join_competition/join_competition",
     "pages/index/index"
-   
-    
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "开灯",
-    "navigationBarTextStyle":"#fff",
-    "backgroundColorBottom":"#000"
+    "navigationBarTextStyle": "#fff",
+    "backgroundColorBottom": "#000"
   }
 }

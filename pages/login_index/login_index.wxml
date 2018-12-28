@@ -1,0 +1,23 @@
+<!--pages/login_index/login_index.wxml-->
+<view class="container">
+  <view class='userinfo'>
+    <view class='userinfobox'>
+      <view class='userpic'>
+        <image class='card_info_user_img' src='{{userimg}}'></image>
+      </view>
+      <view class='userinfo_text'>
+        <text class='username'>{{username}}</text>
+        <view class='userlvl'>
+          <image src='../../images/userlvl.png'></image>
+          <image src='../../images/userlvl.png'></image>
+          <image src='../../images/userlvl.png'></image>
+        </view>
+        <text class='usertime'>服务期至：2019/01/01 12:00</text>
+      </view>
+    </view>
+    <image class='titlebg' src="../../images/titlebg.png"></image>
+  </view>
+  <view class='banner'>
+    <image src='../../images/bannercard.png'></image>
+  </view>
+</view>
