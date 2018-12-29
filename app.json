@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/mylist/mylist",
     "pages/login_index/login_index",
     "pages/join_competition/join_competition",
     "pages/index/index"
@@ -9,5 +10,25 @@
     "navigationBarTitleText": "开灯",
     "navigationBarTextStyle": "#fff",
     "backgroundColorBottom": "#000"
+  },
+  "tabBar": {
+    "color": "#8a6e57",
+    "selectedColor": "#f4f4f4",
+    "backgroundColor": "#000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/login_index/login_index",
+        "text": "首页",
+        "iconPath": "images/homeicon.png",
+        "selectedIconPath": "images/homeicon_active.png"
+      },
+      {
+        "pagePath": "pages/mylist/mylist",
+        "text": "分类",
+        "iconPath": "images/myicon.png",
+        "selectedIconPath": "images/myicon_active.png"
+      }
+    ]
   }
 }

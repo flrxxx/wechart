@@ -1,0 +1,108 @@
+/* pages/mylist/mylist.wxss */
+.container{
+  background-image: url("http://flrxxx.gz01.bdysite.com/tempimage/bodybg.png");
+}
+.viphead{
+  height: 232rpx;
+  width: 100%;
+  position: relative;
+}
+.viphead .headbg{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.vipheadbox{
+  position: absolute;
+  width:690rpx;
+  height: 210rpx;
+  left: 30rpx;
+  bottom:0px;
+  z-index: 2;
+}
+.vipheadbox .vipbg{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.vipheadinfo{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  padding-top: 55rpx;
+  text-align: center;
+  top:0px;
+  z-index: 10;
+}
+.card_info_user_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30rpx;
+}
+.viptext{
+  height: 100rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.vipline{
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+  text-align: left;
+}
+.vipname{
+  font-size: 40rpx;
+  color: #fff;
+  margin-right: 30rpx;
+  vertical-align: baseline;
+}
+.lasttime{
+  font-size: 20rpx;
+  color: #fff;
+  vertical-align:baseline;
+}
+.userlvl{
+  margin-right: 20rpx;
+  display: inline-block;
+  height: 26rpx;
+  box-sizing: border-box;
+  vertical-align:baseline;
+}
+.userlvl image{
+  width: 30rpx;
+  height: 26rpx;
+  margin-right:5rpx;
+}
+.vipother{
+  font-size: 24rpx;
+  color: #fff;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.vipside{
+  position: relative;
+}
+.vipside:after{
+  content:"/";
+  display: inline-block;
+  color:#675d4f;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  top:0px;
+}

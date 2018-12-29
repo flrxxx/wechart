@@ -20,4 +20,16 @@
   <view class='banner'>
     <image src='../../images/bannercard.png'></image>
   </view>
+  <view class='textinfo'>
+    <text class='title'>拼团规则</text>
+    <text>三人成团 成团即可获赠</text>
+    <text>拼团三日内有效</text>
+    <text>每人最多获得三个拼团奖励</text>
+  </view>
+  <view class='footbtn'>
+    <button>发起拼团</button>
+  </view>
+  <view class='footinfo'>
+    <text>活动时间 2019/01/01——2019/01/31</text>
+  </view>
 </view>

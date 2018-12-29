@@ -4,13 +4,13 @@
 }
 .userinfo{
   position: relative;
-  height: 206rpx;
+  height: 200rpx;
   width: 100%;
 }
 .userinfobox{
   position: relative;
   z-index: 10;
-  padding-top:40rpx;
+  padding-top:37rpx;
   text-align: center;
 }
 .titlebg{
@@ -68,8 +68,23 @@
 .banner{
   width: 100%;
   height: 492rpx;
+  margin-bottom: 30rpx;
 }
 .banner image{
   width: 100%;
   height: 100%;
+}
+.textinfo{
+  color:#ceb58c;
+  margin-bottom: 30rpx;
+}
+.textinfo text{
+  display: block;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 46rpx;
+}
+.textinfo .title{
+  font-size: 28rpx;
+  font-weight: bold;
 }
