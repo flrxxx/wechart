@@ -1,0 +1,86 @@
+/* pages/components/diolog/diolog.wxss */
+.diolog{
+  position: fixed;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  z-index: 100;
+}
+.diologbg{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+}
+.diologcontent{
+  width: 520rpx;
+  height: 588rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -260rpx;
+  top:200rpx;
+}
+.diologcontent .diologcontentbg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 10;
+}
+.diologinfo{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  z-index: 15;
+  padding-top:90rpx;
+  }
+.diologicon{
+  width: 176rpx;
+  height: 92rpx;
+  margin: 0 auto;
+  margin-bottom: 51rpx;
+}
+.diologicon .icon1{
+  height: 92rpx;
+  width: 176rpx;
+}
+.diologicon .icon2{
+  height: 92rpx;
+  width: 176rpx;
+}
+.diologicon .icon3{
+  height: 92rpx;
+  width: 176rpx;
+}
+.diologtilte{
+  display: block;
+  font-size: 36rpx;
+  color:#ceb58c;
+  margin-bottom: 22rpx;
+   text-align: center;
+}
+.diologtext{
+  text-align: center;
+  display: block;
+  font-size: 26rpx;
+  color:#ceb58c;
+  margin-bottom: 84rpx;
+}
+.diologbtn{
+  display: block;
+  width: 376rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color:#000;
+  background-color: #ceb58c;
+  border-radius: 40rpx;
+}

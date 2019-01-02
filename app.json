@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/mylist/mylist",
+    "pages/loading/loading",
+    "pages/login/login",
+    "pages/index/index",
     "pages/login_index/login_index",
-    "pages/join_competition/join_competition",
-    "pages/index/index"
+    "pages/mylist/mylist",
+    "pages/join_competition/join_competition"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",

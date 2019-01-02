@@ -1,0 +1,46 @@
+<view class='list'>
+    <view wx:if="{{list.length == 0}}" class='empty_item'>
+      <image src='../../../images/emptylist.png' class='emptylist'></image>
+      <text>还没有拼团</text>
+    </view>
+    <view wx:else>
+      <view wx:for="{{list}}" wx:key="number" wx:for-item="item">
+        <view class='item' wx:if="{{item.type == 0}}">
+          <view  class='item_info'>
+            <view  class='leftlab'>拼团中...</view>
+            <view class='itemidnum'>拼团编号 {{item.number}}</view>
+            <view class='itemtime'>{{item.time}}</view>
+            <view class='itemnum'>
+              <text class='itemnumf'>{{item.numberpeople}}</text>
+              <text>3</text>
+            </view>
+          </view>
+          <image src='../../../images/listbg.png' class='itembg'></image>
+        </view>
+        <view class='item itemsuccess' wx:if="{{item.type == 1}}">
+          <view  class='item_info'>
+            <view  class='leftlab'>拼团成功</view>
+            <view class='itemidnum'>拼团编号 {{item.number}}</view>
+            <view class='itemtime'>{{item.time}}</view>
+            <view class='itemnum'>
+              <text class='itemnumf'>{{item.numberpeople}}</text>
+              <text>3</text>
+            </view>
+          </view>
+          
+        </view>
+        <view class='item itemfail' wx:if="{{item.type == 2}}">
+          <view  class='item_info'>
+            <view  class='leftlab'>拼团失败</view>
+            <view class='itemidnum'>拼团编号 {{item.number}}</view>
+            <view class='itemtime'>{{item.time}}</view>
+            <view class='itemnum'>
+              <text class='itemnumf'>{{item.numberpeople}}</text>
+              <text>3</text>
+            </view>
+          </view>
+          
+        </view>
+      </view>
+    </view>
+  </view>

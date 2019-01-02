@@ -1,5 +1,6 @@
 {
   "usingComponents":{
-    "otherinfo": "/pages/components/otherinfo/otherinfo"
+    "otherinfo": "/pages/components/otherinfo/otherinfo",
+    "diolog":"/pages/components/diolog/diolog"
   }
 }

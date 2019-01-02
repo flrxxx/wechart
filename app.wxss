@@ -8,8 +8,8 @@ page{
 .container{
   min-height: 100%;
   width: 100%;
-  background-image: url("http://flrxxx.gz01.bdysite.com/tempimage/indexbg.jpg");
   background-size:100% 100%;
+  position: relative;
 }
 
 .fwxy{

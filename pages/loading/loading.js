@@ -1,47 +1,25 @@
-// pages/login_index/login_index.js
-const app = getApp();
-
+// pages/loading/loading.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    pageshow:false,
-    userimg: "",
-    username: "",
-    ServiceDate:"2019/01/01 12:00",
-    ActivityDate:"2019/01/01——2019/01/31"
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  imageLoad: function () {
-    wx.hideLoading();
-    this.setData({
-      pageshow: true
-    })
-  },
   onLoad: function (options) {
-    this.setData({
-      username:app.globalData.userInfo.nickName,
-      userimg:app.globalData.userInfo.avatarUrl
-    })
-    wx.showLoading({
-      title: '加载中',
-    })
+
   },
-  clickAssemble:function(){
-    wx.redirectTo({
-      url: '../join_competition/join_competition'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**

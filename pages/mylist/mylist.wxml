@@ -1,29 +1,31 @@
 <!--pages/mylist/mylist.wxml-->
 <view class="container">
-  <view class="viphead">
-    <view class='vipheadbox'>
-      <view class='vipheadinfo'>
-        <image class='card_info_user_img' src='{{useimg}}'></image>
-        <view class='viptext'>
-          <view class='vipline'>
-            <text class='vipname'>刘若曦</text>
-            <view class='userlvl'>
-              <image src='../../images/userlvl.png'></image>
-              <image src='../../images/userlvl.png'></image>
-              <image src='../../images/userlvl.png'></image>
+  <view class='container_info' wx:if="{{pageshow}}">
+    <view class="viphead">
+      <view class='vipheadbox'>
+        <view class='vipheadinfo'>
+          <image class='card_info_user_img' src='{{userimg}}'></image>
+          <view class='viptext'>
+            <view class='vipline'>
+              <text class='vipname'>{{username}}</text>
+              <view class='userlvl'>
+                <image src='../../images/userlvl.png'></image>
+                <image src='../../images/userlvl.png'></image>
+                <image src='../../images/userlvl.png'></image>
+              </view>
+              <text class='lasttime'>{{lasttime}}天后到期</text>
             </view>
-            <text class='lasttime'>1032天后到期</text>
-          </view>
-          <view class='vipline'>
-            <text class='vipother vipside'>累计发起拼团2次</text>
-            <text class='vipother'>共成功1次 </text>
+            <view class='vipline'>
+              <text class='vipother vipside'>累计发起拼团{{total}}次</text>
+              <text class='vipother'>共成功{{successtimes}}次 </text>
+            </view>
           </view>
         </view>
-        
-        
+        <image src="../../images/vipbg.png" class='vipbg'></image>
       </view>
-      <image src="../../images/vipbg.png" class='vipbg'></image>
+      <image src="../../images/headbg.png" class='headbg'></image>
     </view>
-    <image src="../../images/headbg.png" class='headbg'></image>
-  </view>
+    <list list="{{list}}"></list>
+   </view>
+  <image src="../../images/bodybg.png" class='bodybg' bindload="imageLoad"></image>
 </view>

@@ -1,5 +1,8 @@
 <!--index.wxml-->
+
+
 <view class="container" >
+<view class='container_info' wx:if="{{pageshow}}">
   <view class='card_img'>
     <image src="{{cardimg}}" class='cardimg' ></image>
   </view>
@@ -15,9 +18,11 @@
     </view>
   </view>
   <view class='footbtn'>
-    <button>开通拼团</button>
+    <button catchtap="joinVIP">开通拼团</button>
   </view>
   <view class='footinfo'>
     <text>活动时间 2019/01/01——2019/01/31</text>
   </view>
+  </view>
+   <image src="../../images/indexbg.jpg" class='bodybg' bindload="imageLoad"></image>
 </view>

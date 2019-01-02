@@ -1,0 +1,25 @@
+<!--pages/components/diolog/diolog.wxml-->
+<view class='diolog' style='display:{{diologhide}}'>
+  <view class='diologcontent'>
+    <view class='diologinfo'>
+      <view class='diologicon'>
+        <image wx:if="{{diologtype == 1}}" src='../../../images/diologicon-1.png' class='icon1'></image>
+        <image wx:if="{{diologtype == 2}}" src='../../../images/diologicon-2.png' class='icon2'></image>
+        <image wx:if="{{diologtype == 3}}" src='../../../images/diologicon-3.png' class='icon3'></image>
+      </view>
+      <text class='diologtilte' wx:if="{{diologtype == 1}}">该团已结束</text>
+      <text class='diologtext' wx:if="{{diologtype == 1}}">您可以发起新拼团，享受拼团优惠</text>
+      <button class='diologbtn' bindtap="closediolog" wx:if="{{diologtype == 1}}">确认</button>
+
+      <text class='diologtilte' wx:if="{{diologtype == 2}}">该团已结束</text>
+      <text class='diologtext' wx:if="{{diologtype == 2}}">您可以发起新拼团，享受拼团优惠</text>
+      <button class='diologbtn' bindtap="closediolog" wx:if="{{diologtype == 2}}">确认</button>
+
+      <text class='diologtilte' wx:if="{{diologtype == 3}}">您已是VIP用户</text>
+      <text class='diologtext' wx:if="{{diologtype == 3}}">发起新拼团，奖一年VIP</text>
+      <button class='diologbtn' bindtap="closediolog" wx:if="{{diologtype == 3}}">确认</button>
+    </view>
+    <image src="../../../images/diologbg.png" class='diologcontentbg'></image>
+  </view>
+  <view class='diologbg'></view>
+</view>

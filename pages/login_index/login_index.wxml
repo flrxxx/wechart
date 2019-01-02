@@ -1,5 +1,6 @@
 <!--pages/login_index/login_index.wxml-->
 <view class="container">
+<view class='container_info' wx:if="{{pageshow}}">
   <view class='userinfo'>
     <view class='userinfobox'>
       <view class='userpic'>
@@ -12,7 +13,7 @@
           <image src='../../images/userlvl.png'></image>
           <image src='../../images/userlvl.png'></image>
         </view>
-        <text class='usertime'>服务期至：2019/01/01 12:00</text>
+        <text class='usertime'>服务期至：{{ServiceDate}}</text>
       </view>
     </view>
     <image class='titlebg' src="../../images/titlebg.png"></image>
@@ -27,9 +28,11 @@
     <text>每人最多获得三个拼团奖励</text>
   </view>
   <view class='footbtn'>
-    <button>发起拼团</button>
+    <button bindtap="clickAssemble">发起拼团</button>
   </view>
   <view class='footinfo'>
-    <text>活动时间 2019/01/01——2019/01/31</text>
+    <text>活动时间 {{ActivityDate}}</text>
   </view>
+  </view>
+  <image src="../../images/bodybg.png" class='bodybg' bindload="imageLoad"></image>
 </view>
