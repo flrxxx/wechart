@@ -9,11 +9,9 @@
             <view class='vipline'>
               <text class='vipname'>{{username}}</text>
               <view class='userlvl'>
-                <image src='../../images/userlvl.png'></image>
-                <image src='../../images/userlvl.png'></image>
-                <image src='../../images/userlvl.png'></image>
+                 <image wx:for='{{viplv}}' wx:key='{{key}}' src='../../images/userlvl.png'></image>
               </view>
-              <text class='lasttime'>{{lasttime}}天后到期</text>
+              <text class='lasttime'>{{lasttime}}</text>
             </view>
             <view class='vipline'>
               <text class='vipother vipside'>累计发起拼团{{total}}次</text>

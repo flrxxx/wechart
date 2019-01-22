@@ -9,11 +9,9 @@
       <view class='userinfo_text'>
         <text class='username'>{{username}}</text>
         <view class='userlvl'>
-          <image src='../../images/userlvl.png'></image>
-          <image src='../../images/userlvl.png'></image>
-          <image src='../../images/userlvl.png'></image>
+          <image wx:for='{{viplv}}' wx:key='{{key}}' src='../../images/userlvl.png'></image>
         </view>
-        <text class='usertime'>服务期至：{{ServiceDate}}</text>
+        <text class='usertime'>服务期至：{{serviceDate}}</text>
       </view>
     </view>
     <image class='titlebg' src="../../images/titlebg.png"></image>
@@ -31,7 +29,7 @@
     <button bindtap="clickAssemble">发起拼团</button>
   </view>
   <view class='footinfo'>
-    <text>活动时间 {{ActivityDate}}</text>
+    <text>{{activityDate}}</text>
   </view>
   </view>
   <image src="../../images/bodybg.png" class='bodybg' bindload="imageLoad"></image>

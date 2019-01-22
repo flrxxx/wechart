@@ -1,7 +1,5 @@
 {
   "pages": [
-    "pages/loading/loading",
-    "pages/login/login",
     "pages/index/index",
     "pages/login_index/login_index",
     "pages/mylist/mylist",
@@ -27,7 +25,7 @@
       },
       {
         "pagePath": "pages/mylist/mylist",
-        "text": "分类",
+        "text": "我的拼团",
         "iconPath": "images/myicon.png",
         "selectedIconPath": "images/myicon_active.png"
       }

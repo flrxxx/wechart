@@ -30,7 +30,8 @@ Page({
       pageshow: true
     })
   },
-  onLoad:function(){
+  onLoad:function(options){
+    console.log(options.id)
     var that = this;
     this.setData({
       username: app.globalData.userInfo.nickName,

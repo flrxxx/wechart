@@ -1,6 +1,8 @@
 // pages/login_index/login_index.js
 const app = getApp();
+const request = require('../../utils/request.js');
 
+var pagestep = 0;
 Page({
 
   /**
@@ -8,32 +10,66 @@ Page({
    */
   data: {
     pageshow:false,
-    userimg: "",
-    username: "",
-    ServiceDate:"2019/01/01 12:00",
-    ActivityDate:"2019/01/01——2019/01/31"
+    pagestep:0,
+    userimg: '',
+    username: '',
+    viplv:5,
+    serviceDate:"",
+    activityDate: app.globalData.activityDate
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   imageLoad: function () {
-    wx.hideLoading();
-    this.setData({
-      pageshow: true
-    })
+    pagestep = pagestep +1 ;
+    if (pagestep == 2) {
+      wx.hideLoading();
+      this.setData({
+        pageshow: true
+      })
+    }
   },
   onLoad: function (options) {
+    request.get('/mini/admin/getVipInfo', { openId: app.globalData.userInfo.openId, unionId: app.globalData.userInfo.unionId }, { "X-Auth-Token": app.globalData.xauthToken}).then(data => {
+      let sertime = '',viplv = '';
+      viplv = parseInt(data.data.level) != NaN ? parseInt(data.data.level) : 0;
+      if(data.data.expire == ''){
+        sertime ='无期限'
+      }else{
+        sertime = request.timestampToTime(data.data.expire,'m');
+      }
+      this.setData({
+        viplv: viplv,
+        serviceDate: sertime
+      })
+     
+      pagestep = pagestep + 1;
+      if (pagestep == 2){
+        wx.hideLoading();
+        this.setData({
+          pageshow: true
+        })
+      }
+      
+    },err => {
+      wx.hideLoading();
+      request.failtips(err);
+    }).catch(res => {
+      console.log(res);
+      wx.hideLoading();
+      request.failtips(res);
+    })
     this.setData({
-      username:app.globalData.userInfo.nickName,
-      userimg:app.globalData.userInfo.avatarUrl
+      username:app.globalData.userInfo.name,
+      userimg:app.globalData.userInfo.headImg,
     })
     wx.showLoading({
       title: '加载中',
     })
   },
   clickAssemble:function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../join_competition/join_competition'
     })
   },

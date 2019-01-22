@@ -1,4 +1,7 @@
 /* pages/login_index/login_index.wxss */
+.container{
+  background-color: #000;
+}
 .bodybg{
   position: absolute;
   top:0px;
@@ -75,6 +78,9 @@
   width: 24rpx;
   height: 20rpx;
   margin-right:5rpx;
+}
+.usertime{
+  display: block;
 }
 .banner{
   width: 100%;

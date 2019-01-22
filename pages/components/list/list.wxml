@@ -4,43 +4,43 @@
       <text>还没有拼团</text>
     </view>
     <view wx:else>
-      <view wx:for="{{list}}" wx:key="number" wx:for-item="item">
-        <view class='item' wx:if="{{item.type == 0}}">
+      <navigator url='/pages/join_competition/join_competition?id={{item.id}}' open-type='navigate' wx:for="{{list}}" wx:key="id" wx:for-item="item">
+        <view class='item' wx:if="{{item.status == 0}}">
           <view  class='item_info'>
             <view  class='leftlab'>拼团中...</view>
-            <view class='itemidnum'>拼团编号 {{item.number}}</view>
-            <view class='itemtime'>{{item.time}}</view>
+            <view class='itemidnum'>拼团编号 {{item.id}}</view>
+            <view class='itemtime'>{{item.createTime}}</view>
             <view class='itemnum'>
-              <text class='itemnumf'>{{item.numberpeople}}</text>
+              <text class='itemnumf'>{{item.count}}</text>
               <text>3</text>
             </view>
           </view>
           <image src='../../../images/listbg.png' class='itembg'></image>
         </view>
-        <view class='item itemsuccess' wx:if="{{item.type == 1}}">
+        <view class='item itemsuccess' wx:if="{{item.status > 1}}">
           <view  class='item_info'>
             <view  class='leftlab'>拼团成功</view>
-            <view class='itemidnum'>拼团编号 {{item.number}}</view>
-            <view class='itemtime'>{{item.time}}</view>
+            <view class='itemidnum'>拼团编号 {{item.id}}</view>
+            <view class='itemtime'>{{item.createTime}}</view>
             <view class='itemnum'>
-              <text class='itemnumf'>{{item.numberpeople}}</text>
+              <text class='itemnumf'>{{item.count}}</text>
               <text>3</text>
             </view>
           </view>
           
         </view>
-        <view class='item itemfail' wx:if="{{item.type == 2}}">
+        <view class='item itemfail' wx:if="{{item.status < 0}}">
           <view  class='item_info'>
             <view  class='leftlab'>拼团失败</view>
-            <view class='itemidnum'>拼团编号 {{item.number}}</view>
-            <view class='itemtime'>{{item.time}}</view>
+            <view class='itemidnum'>拼团编号 {{item.id}}</view>
+            <view class='itemtime'>{{item.createTime}}</view>
             <view class='itemnum'>
-              <text class='itemnumf'>{{item.numberpeople}}</text>
+              <text class='itemnumf'>{{item.count}}</text>
               <text>3</text>
             </view>
           </view>
           
         </view>
-      </view>
+      </navigator>
     </view>
   </view>

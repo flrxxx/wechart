@@ -1,10 +1,5 @@
-const queryUsreInfo = function(){
-  //为方便测试，这里直接设置跳转到开通页面，接口调试完毕请删除此代码 begin
- 
-  wx.redirectTo({
-    url: '/pages/index/index'
-  })
-  //为方便测试，这里直接设置跳转到开通页面，接口调试完毕请删除此代码 end
+
+const queryUsreInfo = function (resolve){
   wx.request({
     url: '这里换成自己后台的链接',
     data: {
@@ -25,7 +20,8 @@ const queryUsreInfo = function(){
       })
     }
   });
-}
+};
+
 
 module.exports = {
   queryUsreInfo: queryUsreInfo
